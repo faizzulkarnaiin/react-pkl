@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 0;
+}
+:root {
+  --bg-light: #cbd5e1;
+  --col-light: #000000;
+  --bg-dark: #0f172a;
+  --col-dark: #94a3b8;
+}
+.light {
+  background-color: var(--bg-light);
+  color: var(--col-light);
+}
+
+.dark {
+  background-color: var(--bg-dark);
+  color: var(--col-dark);
+}
+.status {
+  margin-bottom: 10px;
+}
+.btn {
+  margin-top: 10px;
+}
+.game {
+  display: flex;
+}
+
+.square {
+  width: 35px;
+  height: 35px;
+  border: 1px solid black;
+  background-color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 105px;
+  height: 105px;
+}
+
+.movie-container {
+  width: 100%;
+}
+
+.movie-wrapper {
+  display: flex;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.question-card {
+  /* Center the div  */
+  margin: 0 auto;
+
+  /* Dimensions  */
+  width: 80%; /* Can be in percentage also. */
+  height: auto;
+
+  /* Visual  */
+  background-color: gray;
+  padding: 16px;
+  border-radius: 16px;
+  color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-top: 8px;
+  background-color: darkgray;
+  padding: 16px;
+  border: 3px solid white;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.question-text {
+  color: darkblue;
+  font-size: 24px;
+}
+
+/* Final Results  */
+
+.final-results {
+  /* Center the div  */
+  margin: 0 auto;
+
+  /* Dimensions  */
+  width: 50%; /* Can be in percentage also. */
+  height: auto;
+  margin-top: 64px;
+
+  /* Visual  */
+
+  padding: 16px;
+  border-radius: 16px;
+  color: white;
+  box-shadow: rgba(66, 66, 102, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+/* button {
+  background-color: red; /* Green */
+  /* border: none;
+  color: white;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+
+  border-radius: 24px;
+} */ */
+
+.main-section {
+  text-align: center;
+}
+.stopwatch {
+  margin-top: 10px;
+}
